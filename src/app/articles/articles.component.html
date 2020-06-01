@@ -1,0 +1,13 @@
+<mat-card class="news-card"  *ngFor="let article of articles">
+    <mat-card-header>
+      <div class="news-card-image" mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}"></div>
+      <mat-card-title class="title">{{article.title}}</mat-card-title>
+      <mat-card-subtitle>{{article.source.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+    <mat-card-content>
+      <p>
+        {{article.description}}
+      </p>
+    </mat-card-content>
+</mat-card>   

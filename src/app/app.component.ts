@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newsapp';
+  source: any;
+  getSourceId($event) {
+      this.source = $event;
+      console.log("Soucre received in App", this.source);
+  }
+
 }
+
