@@ -10,13 +10,16 @@ export class NewsApiService {
     
    }
    getAllNewsSource() {
-     return this.httpclient.get('https://newsapi.org/v2/sources?apiKey='+this.API_KEY);
+     return this.httpclient.get('https://newsapi.org/v2/sources?language=en&apiKey='+this.API_KEY);
    }
 
    getArticles(){
-    return this.httpclient.get('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey='+this.API_KEY);
+    return this.httpclient.get('https://newsapi.org/v2/top-headlines?country=us&apiKey='+this.API_KEY);
    }
    getArticlesByID(source: String){
     return this.httpclient.get('https://newsapi.org/v2/top-headlines?sources='+source+'&apiKey='+this.API_KEY);
+   }
+   getArticlesByCategory(category: String){
+    return this.httpclient.get('https://newsapi.org/v2/top-headlines?category='+category+'&apiKey='+this.API_KEY);
    }
 }

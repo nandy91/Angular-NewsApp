@@ -13,15 +13,15 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-
 import { SourceComponent } from './source/source.component';
 import { ArticlesComponent } from './articles/articles.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SourceComponent,
-    ArticlesComponent
+    ArticlesComponent,
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,10 @@ export class ArticlesComponent implements OnInit, OnChanges {
       console.log("selected source is: "+changes.sourceId);
     this.newsService.getArticlesByID(this.sourceId).subscribe(data => this.articles = data['articles']);
     }
+    else{
+      this.newsService.getArticles().subscribe(data => {this.articles =data['articles']})
+      console.log("This is onChnages else");
+    }
   }
-
+  
 }

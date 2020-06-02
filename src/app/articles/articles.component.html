@@ -1,13 +1,23 @@
 <mat-card class="news-card"  *ngFor="let article of articles">
-    <mat-card-header>
-      <div class="news-card-image" mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}"></div>
+  <div class="news-card-image">
+    <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+  </div>
+   <div class="news-card-content">
+  <mat-card-header>
       <mat-card-title class="title">{{article.title}}</mat-card-title>
       <mat-card-subtitle>{{article.source.name}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
     <mat-card-content>
       <p>
         {{article.description}}
       </p>
+      <span>
+       <a href={{article.url}} target="_blank">See More</a>
+      </span>
+     
     </mat-card-content>
+    <mat-card-footer>
+      <p class="date-footer">  Published On: {{article.publishedAt | date : 'medium'}}</p>
+    </mat-card-footer>
+  </div> 
 </mat-card>   
