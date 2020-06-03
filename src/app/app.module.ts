@@ -15,6 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { SourceComponent } from './source/source.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { TechArticlesComponent } from './tech-articles/tech-articles.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ArticlesComponent } from './articles/articles.component';
     AppComponent,
     SourceComponent,
     ArticlesComponent,
+    TechArticlesComponent,
   ],
   imports: [
     BrowserModule,

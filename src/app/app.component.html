@@ -1,8 +1,9 @@
 <mat-toolbar color="accent" class="top-toolbar">
     <span>Top HeadLines</span>
+    <span><a routerLink="/technology" routerLinkActive="active" (click)="onCategorySelect()">Technology</a></span>
 </mat-toolbar>
 <div class="container">
 <app-source (sourceId) = "getSourceId($event)"></app-source>
-<app-articles [sourceId]="source" ></app-articles>
+<div *ngIf="showHeadlines; else elseBlock"><app-articles [sourceId]="source" ></app-articles></div>
+<ng-template #elseBlock><router-outlet></router-outlet></ng-template>
 </div>
-<router-outlet></router-outlet>
