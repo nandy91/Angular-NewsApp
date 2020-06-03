@@ -8,10 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'newsapp';
   source: any;
-  showHeadlines: boolean =true;;
-
+  showHeadlines: boolean =true;
   
-
   getSourceId($event) {
       this.source = $event;
       console.log("Soucre received in App", this.source);
