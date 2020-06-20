@@ -1,3 +1,6 @@
+.source-name{
+    font-size: 0.9em;
+}
 .list-nav{
     background: white;
     padding :10px;
@@ -5,6 +8,7 @@
 }
 .list-item:hover{
     cursor: pointer;
-    background-color: #FFBD33;
+    background-color: rgb(90, 93, 119);
     color: white;
+   
 }
