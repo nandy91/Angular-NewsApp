@@ -14,8 +14,7 @@ export class SourceComponent implements OnInit {
   constructor(private newsService: NewsApiService) { }
 
   ngOnInit(): void {
-    this.newsService.getAllNewsSource().subscribe(data => {this.sourceList = data['sources'];console.log(this.sourceList)});
-    //console.log("Sources",this.sourceList);
+    this.sourceList = ['world','nation','business','technology','entertainment','sports','science','health'];
   }
 
 

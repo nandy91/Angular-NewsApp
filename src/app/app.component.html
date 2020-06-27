@@ -1,6 +1,19 @@
 <mat-toolbar color="accent" class="top-toolbar">
-    <h1>NEWSVIEWS</h1>
-    <span><a routerLink="/technology" routerLinkActive="active" (click)="onCategorySelect()">Tech</a></span>
+    <h1><a routerLink="/" routerLinkActive="active">NEWSVIEWS</a></h1>
+    <span>
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <a routerLink="/India" routerLinkActive="active" (click)="onCategorySelect()">INDIA NEWS</a>
+        </button>
+        <button mat-menu-item>
+          <a routerLink="/" routerLinkActive="active">US NEWS</a>
+        </button>
+      </mat-menu>
+
+    </span>
 </mat-toolbar>
 <div class="container">
     <app-source (sourceId) = "getSourceId($event)"></app-source>
@@ -11,9 +24,9 @@
 </div>
 <footer class="footer bg-dark">
     <div class="social">
-      <a href="#"><i class="fab fa-github fa-2x"></i></a>
-      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/nandy91/Angular-NewsApp"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://twitter.com/nandynew"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/nandithak"><i class="fab fa-linkedin fa-2x"></i>/</a>
     </div>
     <p>Copyright &copy; 2020 - NewsViews</p>
   </footer>

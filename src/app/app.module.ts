@@ -13,9 +13,9 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-import { SourceComponent } from './source/source.component';
 import { ArticlesComponent } from './articles/articles.component';
-import { TechArticlesComponent } from './tech-articles/tech-articles.component';
+import { IndiaArticlesComponent } from './india-articles/india-articles.component';
+import { SourceComponent } from './source/source.component';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import { TechArticlesComponent } from './tech-articles/tech-articles.component';
     AppComponent,
     SourceComponent,
     ArticlesComponent,
-    TechArticlesComponent,
+    IndiaArticlesComponent,
   ],
   imports: [
     BrowserModule,

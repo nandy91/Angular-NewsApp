@@ -1,10 +1,22 @@
+$visit: grey;
 .news-card{
     display: flex;
     padding: 20px;
     margin: 10px;
+    a{
+        text-decoration: none;
+        color: black;
+        &:visited{
+           color: $visit;
+        }
+        &:hover{
+            cursor:pointer;
+        }
+        
+    }
 }
 .news-card-image {
- flex: 1;
+ flex: 0.8;
  background-size: cover;   
  padding-top: 40px;
  margin:10px;
@@ -43,7 +55,16 @@
     }
 }
 .date-footer {
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: auto;
-    font-weight: bold;
+
+}
+.main-title{
+    background-color: #2B2D42;
+    color:#ffff;
+    height: 40px;
+    width: 100%;
+    text-align:center;
+    padding:10px;
+    margin:15px 0px 15px 0px;;
 }

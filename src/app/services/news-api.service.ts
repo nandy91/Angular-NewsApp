@@ -6,28 +6,25 @@ import {  ErrorHandlerService } from '../services/error-handler.service';
   providedIn: 'root'
 })
 export class NewsApiService {
-  API_KEY = 'de6aa3a89706483096fae6d0426ad331';
+  API_KEY = '2ba2ba964e53737e2978a1c001e0d293';
   
   constructor(private httpclient:HttpClient, private errService: ErrorHandlerService) {
     
    }
-   getAllNewsSource() {
-     return this.httpclient.get('https://newsapi.org/v2/sources?language=en&apiKey='+this.API_KEY).pipe(
-      catchError(this.errService.handleError)
-    );
-   }
+   
    getArticles(){
-    return this.httpclient.get('https://newsapi.org/v2/top-headlines?country=us&apiKey='+this.API_KEY).pipe(
+    return this.httpclient.get('https://gnews.io/api/v3/top-news?token='+this.API_KEY).pipe(
       catchError(this.errService.handleError)
     );
    }
-   getArticlesByID(source: String){
-    return this.httpclient.get('https://newsapi.org/v2/top-headlines?sources='+source+'&apiKey='+this.API_KEY).pipe(
+ 
+   getArticlesByCountry(country: String){
+    return this.httpclient.get('https://gnews.io/api/v3/top-news?token='+this.API_KEY+'&country='+country).pipe(
       catchError(this.errService.handleError)
     );
    }
-   getArticlesByCategory(category: String){
-    return this.httpclient.get('https://newsapi.org/v2/top-headlines?country=us&category='+category+'&apiKey='+this.API_KEY).pipe(
+   getArticlesByTopic(topic: String){
+    return this.httpclient.get('https://gnews.io/api/v3/topics/'+topic+'?token='+this.API_KEY).pipe(
       catchError(this.errService.handleError)
     );
    }
