@@ -12,3 +12,19 @@
     color: white;
    
 }
+
+@media(max-width:800px){
+    .list-nav{
+            display:flex;
+            flex-wrap:wrap;
+            padding:0px;
+           justify-content: space-around;
+          }
+    .list-item{
+            flex:1;
+            background-color: rgb(90, 93, 119);
+            color: white;
+            justify-content:space-around;
+            text-align: center;
+    }
+}

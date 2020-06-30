@@ -6,7 +6,7 @@ import { NewsApiService } from '../services/news-api.service';
   styleUrls: ['./articles.component.scss']
 })
 export class ArticlesComponent implements OnInit, OnChanges {
-  @Input() sourceId : any;
+  @Input() sourceId : string;
   articles: Array<any>;
   title: string;
   constructor(private newsService: NewsApiService) { }
@@ -17,11 +17,12 @@ export class ArticlesComponent implements OnInit, OnChanges {
   }
   
   ngOnChanges(changes: SimpleChanges){
-    if(changes.sourceId) {
+    if(changes.sourceId && this.sourceId) {
       this.title=this.sourceId;
       console.log("selected source is: "+changes.sourceId);
       this.newsService.getArticlesByTopic(this.sourceId).subscribe(data => this.articles = data['articles']);
       this.title=this.sourceId;
+      console.log("When Source changed")
     }
     else{
       this.title="TOP US";

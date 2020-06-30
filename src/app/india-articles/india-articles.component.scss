@@ -16,3 +16,19 @@
     display: flex;
     flex-direction: column;
 }
+.link{
+    text-decoration: none;
+    padding:20px;
+    color:black;
+    font-weight: bolder;
+}
+.link:visited{
+    color:grey;
+}
+
+@media(max-width: 500px){
+    .card {
+        grid-template-columns: repeat(1,auto);
+        font-size: smaller;
+    }
+}

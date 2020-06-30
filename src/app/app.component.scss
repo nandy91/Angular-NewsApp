@@ -42,3 +42,10 @@ $top-color: #2B2D42;
 .footer .social > * {
     margin-right: 30px;
 }
+
+@media(max-width:800px){
+    .container{
+        display:flex;
+        flex-direction:column;
+    }
+}

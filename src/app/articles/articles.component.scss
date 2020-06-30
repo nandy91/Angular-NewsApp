@@ -49,9 +49,13 @@ $visit: grey;
         align-items: center;
         margin: 5px;
         padding: 5px;
+        font-size: small;
     }
     .news-card-image{
         object-fit: contain;
+    }
+    .news-card-image{
+        display:none;
     }
 }
 .date-footer {
