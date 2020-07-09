@@ -1,21 +1,21 @@
 # Newsapp -https://nandy91.github.io/Angular-NewsApp/
 This App uses the Angular Framework with the Angular CLI, Angular Material to create an interface that shows the latest news headlines from all different news sources. It also lets us choose a source to get all headlines from it. It uses the NEWS APi to get all the news information.
 This Project helped me learn the following concepts in Angular:
-  *Modules and Components
-  *Templates
-  *Data Binding and Directives
-  *Pipes
-  *Services
-  *Routing
+  * Modules and Components
+  * Templates
+  * Data Binding and Directives
+  * Pipes
+  * Services
+  * Routing
 
 ## Installation Steps:
 Clone Project
-  1.git clone https://github.com/taiyeoguns/news-app-angular.git news-app-angular
-  2.Install dependencies
-  3.Install npm dependencies:
-  4.npm install --save @angular/material @angular/animations @angular/cdk
-  5.Get API key for News service
-  6.Head to https://gnews.io/, signup or login to and get an API key
+  1. git clone https://github.com/taiyeoguns/news-app-angular.git news-app-angular
+  2. Install dependencies
+  3. Install npm dependencies:
+  4. npm install --save @angular/material @angular/animations @angular/cdk
+  5. Get API key for News service
+  6. Head to https://gnews.io/, signup or login to and get an API key
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
