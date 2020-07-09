@@ -10,12 +10,12 @@ This Project helped me learn the following concepts in Angular:
 
 ## Installation Steps:
 Clone Project
-  -git clone https://github.com/taiyeoguns/news-app-angular.git news-app-angular
-  -Install dependencies
-  -Install npm dependencies:
-  -npm install --save @angular/material @angular/animations @angular/cdk
-  -Get API key for News service
-  -Head to https://gnews.io/, signup or login to and get an API key
+  1.git clone https://github.com/taiyeoguns/news-app-angular.git news-app-angular
+  2.Install dependencies
+  3.Install npm dependencies:
+  4.npm install --save @angular/material @angular/animations @angular/cdk
+  5.Get API key for News service
+  6.Head to https://gnews.io/, signup or login to and get an API key
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
